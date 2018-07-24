@@ -1,0 +1,6 @@
+[package]
+name = "rusboy"
+version = "0.1.0"
+authors = ["ccimponeriu1996 <ccimponeriu@hotmail.com>"]
+
+[dependencies]
