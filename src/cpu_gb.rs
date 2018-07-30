@@ -29,6 +29,10 @@ impl CpuGB {
         self.reg_sp = 0xfffe;
         self.reg_pc = 0x0100;
     }
+
+    pub fn run() {
+        //TODO
+    }
 }
 
 

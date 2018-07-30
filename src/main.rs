@@ -1,3 +1,4 @@
+mod gb;
 mod cpu_gb;
 
 use std::env;
@@ -13,9 +14,8 @@ fn main() {
     let boot_rom = read_bin(boot_file_name);
     let rom = read_bin(rom_file_name);
 
-    let mut cpu_gb = cpu_gb::CpuGB::new();
-    cpu_gb.power_up();
-    println!("{:#?}", &cpu_gb);
+    let mut gameboy = gb::GB::new();
+    gameboy.power_on();
 }
 
 fn read_bin<P: AsRef<Path>>(path: P) -> Vec<u8> {
